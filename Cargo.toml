@@ -1,0 +1,26 @@
+[package]
+name = "tonic-web-client"
+version = "0.1.0"
+authors = ["Federico Parma <fedeparma74@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = "grpc-web implementation for use by tonic clients"
+homepage = "https://github.com/Fedeparma74/tonic-web-client"
+repository = "https://github.com/Fedeparma74/tonic-web-client"
+readme = "README.md"
+categories = ["web-programming", "network-programming", "asynchronous"]
+keywords = ["grpc", "grpc-web", "tonic", "wasm"]
+edition = "2021"
+
+[dependencies]
+base64 = "0.21"
+byteorder = "1.4"
+bytes = "1.4"
+futures-util = "0.3"
+http = "0.2"
+http-body = "0.4"
+httparse = "1.8"
+pin-project = "1.0"
+reqwest = { version = "0.11", features = ["stream"] }
+thiserror = "1.0"
+tonic = { version = "0.9", default-features = false }
+tower-service = "0.3"
