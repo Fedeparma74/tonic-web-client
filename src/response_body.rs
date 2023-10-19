@@ -45,7 +45,7 @@ impl EncodedBytes {
 
         if self.raw_buf.len() >= index {
             let decoded = BASE64_STANDARD
-                .decode(self.buf.split_to(index))
+                .decode(self.raw_buf.split_to(index))
                 .map(Bytes::from)?;
             self.buf.put(decoded);
         }
