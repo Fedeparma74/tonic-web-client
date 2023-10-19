@@ -51,7 +51,7 @@ fn prepare_headers(header_map: &HeaderMap<HeaderValue>) -> HeaderMap<HeaderValue
     );
     headers.append(
         ACCEPT,
-        HeaderValue::from_static("application/grpc-web+proto"),
+        HeaderValue::from_static("application/grpc-web-text+proto"),
     );
     headers.append("x-grpc-web", HeaderValue::from_static("1"));
 
